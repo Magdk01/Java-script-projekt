@@ -4,8 +4,73 @@
 <meta charset="UTF-8">
 <title>Kemi/fysik</title>
 </head>
+<script type="text/javascript">
+function Hejsa(){
+	bogstav=[]
+	while bogstav == True :
+	    alert("Hvilken variable oensker du at finde?:" <br> "Mulighederne er : V,n,T,p")
+	    var choice = []
+		choice = prompt()
+	    if bogstav == ("V"):
+	        print("Saaledes skal du bruge stofmaengden, den absolutte temepratur og trykket:")
+	        n = float(input("Indtats stofmaengde(i mol): "))
+	        R = (0.0831)
+	        print("n=",n,"R=",R)
+	        T = float(input("Indtast den absoulte temperatur(i Kelvin): "))
+	        print("n=",n,"R=",R,"T=",T)
+	        p = float(input("Indtast trykket(i bar): "))
+	        print("n=",n,"R=",R,"T=",T,"p=",p)
+	    
+	        v = ((n*R*T)/p)
+	        print ("Volumen er: ",v,"L")
+	    
+	    if bogstav == ("n"):
+	        print("Saaledes skal du bruge volumen, den absolutte temepratur og trykket:")
+	        v = float(input("Indtats volumen(i Liter: "))
+	        R = (0.0831)
+	        print("V=",v,"R=",R)
+	        T = float(input("Indtast den absoulte temperatur(i Kelvin): "))
+	        print("V=",v,"R=",R,"T=",T)
+	        p = float(input("Indtast trykket(i bar): "))
+	        print("V=",v,"R=",R,"T=",T,"p=",p)
+	        n =[]
+	        n = ((p*v)/(R*T))
+	        print("Stofmaengden er: ",n)
+	    
+	    if bogstav == ("T"):
+	        print("Saaledes skal du bruge volumen, stofmaengden og trykket:")
+	        v = float(input("Indtats volumen(i Liter: "))
+	        R = (0.0831)
+	        print("V=",v,"R=",R)
+	        n = float(input("Indtats stofmaengde(i mol): "))
+	        print("V=",v,"R=",R,"n=",n)
+	        p = float(input("Indtast trykket(i bar): "))
+	        print("V=",v,"R=",R,"n=",n,"p=",p)
+	        T =[]
+	        T = ((p*v)/(R*n))
+	        print("Den absolutte temperatur er: ",T)
+
+	    if bogstav == ("p"):
+	        print("Saaledes skal du bruge volumen, stofmaengden og den absolutte temperatur :")
+	        v = float(input("Indtats volumen(i Liter: "))
+	        R = (0.0831)
+	        print("V=",v,"R=",R)
+	        n = float(input("Indtats stofmaengde(i mol): "))
+	        print("V=",v,"R=",R,"n=",n)
+	        T = float(input("Indtast den absoulte temperatur(i Kelvin): "))
+	        print("V=",v,"R=",R,"n=",n,"T=",T)
+	        p =[]
+	        p = ((n*R*T)/v)
+	        print("Trykket er ",p)
+	
+}
+
+</script>
+
 <body>
 <p>Hello world </p>
+<input type="button" onclick="Hejsa()">
+
 
 </body>
 </html>
