@@ -6,6 +6,33 @@
 </head>
 <body>
 <script type="text/javascript">
+function Hejsa(){
+	var choice = []
+	var cond = 1
+	while (cond == 1) {
+	    alert("Hvilken variable oensker du at finde?:"+ "<br>" + "Mulighederne er : V,n,T,p")
+		choice = prompt()
+		
+	    if (choice == ("V")){
+	    	
+	        alert("Saaledes skal du bruge stofmaengden, den absolutte temepratur og trykket:");
+	        var n = parseFloat(prompt("Indtats stofmaengde(i mol): "));
+	        var R = parseFloat(0.0831);
+	        alert("n=" + n + "R=" + R);
+	        var T = parseFloat(prompt("Indtast den absoulte temperatur(i Kelvin): "));
+	        alert("n=" + n +"R=" + R + "T=" +T);
+	        var p = parseFloat(prompt("Indtast trykket(i bar): "));
+	        alert("n=" + n +"R=" +R +"T=" + T + "p=" + p);
+	    
+	        var v = ((n*R*T)/p);
+	        alert("Volumen er: " + v + "L");
+	    }
+	}
+	    
+	
+}
+
+
 
 function test(){
 	alert("hello world");
@@ -15,7 +42,7 @@ function test(){
 
 <p>Hello world </p>
 
-<input type="button" onclick="test()" value="test">
+<input type="button" onclick="Hejsa()" value="test">
 
 
 </body>
