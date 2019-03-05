@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+
+Body{
+	
+	background-color: white;
+}
+
+.formel {
+	background-color: green;
+	background-size: auto;
+	background-repeat:no-repeat;
+	padding: 4 px;
+	border : 4 px;
+}
+
+mark {
+	background-color: green;
+}

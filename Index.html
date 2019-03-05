@@ -2,43 +2,127 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel = "stylesheet"  href="Index.css" >
 <title>Kemi/fysik</title>
 </head>
 <body>
-<script type="text/javascript">
-function Hejsa(){
-	var choice = []
-	var cond = 1
-	while (cond == 1) {
-	    alert("Hvilken variable oensker du at finde?:"+ "<br>" + "Mulighederne er : V,n,T,p")
-		choice = prompt()
-		
-	    if (choice == ("V")){
-	    	
-	        alert("Saaledes skal du bruge stofmaengden, den absolutte temepratur og trykket:");
-	        var n = parseFloat(prompt("Indtats stofmaengde(i mol): "));
-	        var R = parseFloat(0.0831);
-	        alert("n=" + n + "R=" + R);
-	        var T = parseFloat(prompt("Indtast den absoulte temperatur(i Kelvin): "));
-	        alert("n=" + n +"R=" + R + "T=" +T);
-	        var p = parseFloat(prompt("Indtast trykket(i bar): "));
-	        alert("n=" + n +"R=" +R +"T=" + T + "p=" + p);
-	    
-	        var v = ((n*R*T)/p);
-	        alert("Volumen er: " + v + "L");
-	    }
-	}
-	    
-	
-}
+<td width="100%">
+<p>Vi vil&nbsp; undersøge om Boyle-Mariottes lov er rigtig. Loven
+siger at for en indespærret gas vil produktet af trykket og rumfanget være
+konstant, hvis ellers temperaturen er den samme. Det kan udtrykkes ved formlen:</p>
+<ul>
+  <li><mark>p*V=k</mark></li>
+</ul>
+<p>hvor p er trykket i Pascal, V er volumet i kubikmeter og k et fast tal (en
+konstant).</p>
+<p>En anden måde at udtrykke det på er ved at sige at tryk og rumfang er
+omvendt proportionale med hinanden:</p>
+<ul>
+  <li><p><mark>p=k/V</mark></p></li>
+</ul>
 
+<p>Til forsøget benyttes en 60 ml injektionssprøjte og en trykmåler. Sprøjten indstilles på
+40 ml og forbindes med en trykmåler via en plastslange. Herefter noteres
+trykket for forskellige sprøjterumfang. Til sidst bestemmes slangens rumfang
+ved at måle dens længde og diameter. Lav en graf med rumfanget på x-aksen og
+trykket på y-aksen. Som tendenslinje skal du benytte
+"potensfunktion". Passer formlen med teorien?</p>
 
+<p><img border="0" src="pic1.jpg" width="164" height="214"></p>
 
-function test(){
-	alert("hello world");
-}
+      <p>&nbsp;
+</p><hr>
 
-</script>
+<ul>
+  <li>Du skal bestemme luftens densitet og lave en graf over volumen som 
+	funktion af antal mol. Øvelsen kan slås sammen med bestemmelse af 
+	gaskonstanten. Det sparer tid.</li>
+</ul>
+
+<p>&nbsp;Til forsøget benyttes en metaldåse med cykelventil, en gasmåler (vandpiben) 
+og en vægt. Metaldåsen vejes først og fyldes derpå med atmosfærisk luft fra 
+cykelpumpen. Dåsen vejes igen og luften ledes ind i gasmåleren. Her aflæses 
+rumfanget ved vandoverfladerne i samme niveau. Så er trykket det samme som 
+lufttrykket. Bestem derved densiteten af luften. Gentag forsøget fire gange og bestem
+    en gennemsnitsdensitet. Sammenlign med tabelværdien på 1,29 g/l.</p>
+<ul>
+  <li>Du skal bestemme 
+    trykket i luften som funktion
+    af luftens masse.</li>
+</ul>
+<p>&nbsp;Forsøget
+    er næsten magen til. Dåsen vejes tom og der fyldes lidt luft ind i
+    beholderen og den vejes igen. Dernæst ledes luften til trykmåleren og
+    trykket aflæses. Det største tryk er 2000hPa. Lav en række målinger af
+    trykket med forskellige luftmasser. Lav en graf med trykket på x-aksen
+    massen af luften på y-aksen. Lav en tendenslinje.</p>
+<ul>
+  <li>Du skal bestemme gaskonstanten R som indgår i idealgasloven. </li>
+</ul>
+
+<p>Samme opstilling. Dåsen vejes tom og der fyldes lidt luft ind i
+    beholderen og den vejes igen. Luften ledes ind i gasmåleren. Her aflæses rumfanget ved
+    vandoverfladerne i samme niveau. Så er trykket det samme som lufttrykket.
+    Gentag forsøget et par gange.&nbsp; Bestem antallet af mol luft med
+    formlen:</p>
+
+<p>&nbsp;</p>
+<ul>
+  <li><mark>n=m/M &harr; m=b*M</mark></li>
+</ul>
+
+hvor molmassen for luft er 29,0 g/mol. Bestem gaskonstanten ved hjælp af
+    udtrykket:
+<ul>
+  <li><p><mark>R=(p*V)/(n*T)</mark></p></li>
+</ul>
+<p>Sammenlign den fundne værdi med tabelværdien:</p>
+<ul>
+  <li><p><mark>R=8,31 J/(mol*K)</mark></li>
+</ul>
+      <p><img border="0" src="pic3.jpg" width="167" height="221">
+</p><hr>
+<ul>
+  <li>At undersøge
+    om Charles lov er rigtig. Loven siger at for en indespærret gas vil trykket
+    p og den absolutte temperatur: T = t + 273 (Kelvin) være
+    proportionale,&nbsp; forudsat at rumfanget er
+    det samme. Det kan udtrykkes ved formlen:</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><p><mark>p=k*T</mark></p></li>
+</ul>
+<p>Gassen er indesluttet i en glasbeholder og dens tryk måles
+ved hjælp af kviksølvmanometret.
+Kviksølv er et giftigt stof, derfor skal opstillingen være placeret i en
+bakke, hvis kviksølvet skulle løbe ud. Hvis det sker tilkald da læreren. Der
+er ingen grund til at trykke på panikknappen.</p>
+<p>&nbsp;Beholderen nedsænkes i et vandbad (den skal være
+helt neddykket). Efter at have rørt rundt i vandbadet i nogle minutter, kan vi
+gå ud fra at temperaturen i vandet (måles med et termometer) er den samme som
+i gassen. Kviksølvmanometrets højre gren er forskydelig og før hver aflæsning
+indstilles den så overfladen i den venstre gren står ud for en fast valgt højde
+h<sub>1</sub>. Højden h2 i
+den højre overflade måles og gassens tryk kan nu beregnes ud fra dybdeformlen:</p>
+<ul>
+  <li><p><mark>p=p0+&rho;*g*h</mark></p></li>
+</ul>
+<p>hvor p<sub>0</sub> er dagens tryk i Pascal, <mark>&rho;</mark>
+er kviksølvs massefylde 13600 kg/m<sup>3</sup> og h = h<sub>2</sub> - h<sub>1</sub>.&nbsp;</p>
+<p>
+Sammenhørende
+værdier af trykket p og temperaturen t bestemmes
+ved 5 – 10 forskellige temperaturer mellem 20<sup>o</sup> C og 100<sup>o</sup>
+C. Efter
+sidste måling skal højre manometergren sænkes til den oprindelige position
+ellers løber kviksølvet tilbage i beholderen. Lav en graf med
+temperaturen på x-aksen og trykket på
+y-aksen. Hvad er det laveste tryk og dermed temperatur du kan have ud fra dit
+forsøg. </p>
+<p><img border="0" src="pic3.jpg" width="167" height="222"></p>
+
+      <p>&nbsp;</p></td>
 
 <p>Hello world </p>
 
