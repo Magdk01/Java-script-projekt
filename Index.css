@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+
+
+Body{
+	
+	background-color: white;
+	padding:100px;
+}
+
+.formel {
+	background-color: green;
+	background-size: auto;
+	background-repeat:no-repeat;
+	padding: 4 px;
+	border : 4 px;
+}
+
+mark {
+	background-color: green;
+}
+
+.bigpic{
+	position:relative;
+	margin: 5px auto;
+	padding: 20px;
+	/* text-align: center; */
+	float:right;
+	width: 200px;
+}
