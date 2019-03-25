@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Kemi/fysik</title>
+    <script>
+        var stof = parseFloat(stof);
+        var konstant = parseFloat(0,0831);
+        var temperatur = parseFloat(temperatur);
+        var trykket = parseFloat(trykket);
+        var volume = parseFloat(volume);
+        var mar = parseFloat();
+        
+        function boyle(){
+            return stof*volume;
+        }
+   
+
+        </script>
+    </head>
+    <body>
+        <form>
+           <p>Volume<br>
+           <input type="text" name="volume">
+               </p>
+            
+            <p>Stofmængde<br>
+            <input type="text" name="stof">
+                </p>
+                
+            <p>Temperatur<br>
+            <input type="text" name="temperatur">
+                </p>
+                
+            <p>Tryk<br>
+            <input type="text" name="tryk"
+                </p>
+           
+           <p>
+           <input
+               type="button"
+               value="Udregn din flotte fyr"
+               onclick="document.getElementById('demo').innerHTML = boyle(volume.value,stof.value)">
+            </p>
+            <br>
+            <p id="demo"></p>
+        </form>
+    </body>
+</html>
