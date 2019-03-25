@@ -4,6 +4,7 @@
 Body{
 	
 	background-color: white;
+	padding:100px;
 }
 
 .formel {
@@ -16,4 +17,13 @@ Body{
 
 mark {
 	background-color: green;
+}
+
+.bigpic{
+	position:relative;
+	margin: 5px auto;
+	padding: 20px;
+	/* text-align: center; */
+	float:right;
+	width: 200px;
 }
