@@ -20,10 +20,48 @@ mark {
 }
 
 .bigpic{
-	position:relative;
 	margin: 5px auto;
 	padding: 20px;
 	/* text-align: center; */
 	float:right;
 	width: 200px;
+	padding-bottom: 0px;
+}
+
+.menu {
+	text-align: left;
+	position: -webkit-sticky;
+	position: sticky;
+	top:0;
+	
+	
+}
+
+.submenu{
+	text-align: left;
+	width:70px;
+	padding: 10px;
+	margin-left: -100px;
+	border:thick;
+	border-style: groove;
+	
+	
+}
+a:link {
+	
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+	color:red;
+}
+.currentLink {
+   color: #640200;
+   background-color: #000000;
 }
