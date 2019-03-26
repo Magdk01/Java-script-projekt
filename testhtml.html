@@ -11,29 +11,51 @@
         var volume = parseFloat(volume);
         var mar = parseFloat();
         
-        function boyle(){
+        function boyle(stof,volume){
             return stof*volume;
         }
-   
+
+function gaslov(){
+    switch(){
+        case(stof=0):
+        return (trykket*volume)/(konstant*temperatur);
+        break;
+        case(temperatur=0):
+        return (trykket*volume)/(konstant*stof);
+        break;
+        case(trykket=0):
+        return (stof*konstant*temperatur)/volume;
+        break;
+        case(volume=0):
+        return (stof*konstant*temperatur)/trykket;
+        break;
+
+    }
+    
+}
+    document.getElementById("vol").setAttribute("value","volume");
+    document.getElementById("sto").setAttribute("value","stof");
+    document.getElementById("temp").setAttribute("value","temperatur");
+    document.getElementById("try").setAttribute("value","trykket");
 
         </script>
     </head>
     <body>
         <form>
            <p>Volume<br>
-           <input type="text" name="volume">
+           <input type="number" name="volume" id="vol">
                </p>
             
             <p>Stofmængde<br>
-            <input type="text" name="stof">
+            <input type="number" name="stof" id="sto">
                 </p>
                 
             <p>Temperatur<br>
-            <input type="text" name="temperatur">
+            <input type="number" name="temperatur" id="temp">
                 </p>
                 
             <p>Tryk<br>
-            <input type="text" name="tryk"
+            <input type="number" name="tryk" id="try">
                 </p>
            
            <p>
