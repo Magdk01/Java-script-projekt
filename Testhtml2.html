@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet"  href="Index.css" >
+<title>Insert title here</title>
+</head>
+<script>
+
+
+
+
+function reset(){
+	
+	document.getElementById("temp").setAttribute("value","");
+	document.getElementById("vol").setAttribute("value","");
+	document.getElementById("sto").setAttribute("value","");
+	document.getElementById("try").setAttribute("value","");
+	
+	document.getElementById("vol").value = "";
+	document.getElementById("sto").value = "";
+	document.getElementById("try").value = "";
+	document.getElementById("temp").value = "";
+	
+	var vol = "";
+	var stof = "";
+	var tryk = "";
+	var temp = "";
+	
+	
+}
+
+function Gaslov(){
+	var vol = document.getElementById("vol").value;
+	var stof = document.getElementById("sto").value;
+	var tryk = document.getElementById("try").value;
+	var temp = document.getElementById("temp").value;
+	var konstant = parseFloat(0.0831)
+	
+	var volin = parseFloat((konstant*stof*temp)/tryk)
+	var stofin = parseFloat((tryk*vol)/(konstant*temp))
+	var trykin = parseFloat(konstant/vol)
+	var tempin = parseFloat((tryk*vol)/(konstant*stof))
+	
+	if (document.getElementById("vol").value == ""){
+	document.getElementById("vol").setAttribute("value",volin);
+	}
+	
+	if (document.getElementById("try").value == ""){
+	document.getElementById("try").setAttribute("value",trykin);
+	}
+	
+	if (document.getElementById("sto").value == ""){
+		document.getElementById("sto").setAttribute("value",stofin);
+		}
+	
+	if (document.getElementById("temp").value == ""){
+		document.getElementById("temp").setAttribute("value",tempin);
+		}
+	}
+</script>
+<body bgcolor="" background="">
+
+<div class="menu">
+	<div class="submenu"><a href=index.html >Idealgas</a>
+	</div>
+	<div class="submenu" "><a href=testhtml.html>Jævncirkel-
+	bevægelse</a>
+	</div>
+	<div class="submenu" "><a href=testhtml2.html style= color:red;>Calculator</a>
+	</div>
+</div>
+<h1 style= text-align:center;>Calculator</h1>
+<div class="main" style= text-align:center;>
+   		<p>Volume<br>
+        <input type="number" maxlength="5" name="volume" id="vol">
+        </p>
+         
+         <p>Stofmængde<br>
+         <input type="number" maxlength="5" name="stof" id="sto">
+         </p>
+             
+         <p>Temperatur<br>
+         <input type="number" maxlength="5" name="temperatur" id="temp">
+         </p>
+             
+         <p>Tryk<br>
+         <input type="number" maxlength="5" name="tryk" id="try">
+         </p>
+           
+         <input type="button" value="reng" onclick= "Gaslov()">
+         <input type="button" value="reset" onclick= "reset()">
+
+</div>
+
+</body>
+</html>

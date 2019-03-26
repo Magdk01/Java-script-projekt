@@ -42,27 +42,13 @@ function gaslov(){
     </head>
     <body>
         <form>
-           <p>Volume<br>
-           <input type="number" name="volume" id="vol">
-               </p>
-            
-            <p>Stofmængde<br>
-            <input type="number" name="stof" id="sto">
-                </p>
-                
-            <p>Temperatur<br>
-            <input type="number" name="temperatur" id="temp">
-                </p>
-                
-            <p>Tryk<br>
-            <input type="number" name="tryk" id="try">
-                </p>
-           
+          
            <p>
            <input
                type="button"
                value="Udregn din flotte fyr"
-               onclick="document.getElementById('demo').innerHTML = boyle(volume.value,stof.value)">
+               onclick="gaslov()"
+               >
             </p>
             <br>
             <p id="demo"></p>
