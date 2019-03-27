@@ -2,56 +2,44 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel = "stylesheet"  href="Index.css" >
             <title>Kemi/fysik</title>
-    <script>
-        var stof = parseFloat(stof);
-        var konstant = parseFloat(0,0831);
-        var temperatur = parseFloat(temperatur);
-        var trykket = parseFloat(trykket);
-        var volume = parseFloat(volume);
-        var mar = parseFloat();
-        
-        function boyle(stof,volume){
-            return stof*volume;
-        }
-
-function gaslov(){
-    switch(){
-        case(stof=0):
-        return (trykket*volume)/(konstant*temperatur);
-        break;
-        case(temperatur=0):
-        return (trykket*volume)/(konstant*stof);
-        break;
-        case(trykket=0):
-        return (stof*konstant*temperatur)/volume;
-        break;
-        case(volume=0):
-        return (stof*konstant*temperatur)/trykket;
-        break;
-
-    }
-    
-}
-    document.getElementById("vol").setAttribute("value","volume");
-    document.getElementById("sto").setAttribute("value","stof");
-    document.getElementById("temp").setAttribute("value","temperatur");
-    document.getElementById("try").setAttribute("value","trykket");
-
-        </script>
     </head>
     <body>
-        <form>
-          
-           <p>
-           <input
-               type="button"
-               value="Udregn din flotte fyr"
-               onclick="gaslov()"
-               >
-            </p>
-            <br>
-            <p id="demo"></p>
-        </form>
+        <h1 style= text-align:center;>Jævn cirkelbevægelse</h1>
+        <div class="menu">
+            <div class="submenu"><a href=index.html >Idealgas</a>
+            </div>
+            <div class="submenu" "><a href=testhtml.html style= color:red;>Jævncirkel-
+                bevægelse</a>
+                </div>
+                <div class="submenu" "><a href=testhtml2.html>Calculator</a>
+            </div>
+        </div>
+
+    <div class="main">
+        <img src="pic4.png" style=float:right;>
+        <p>
+        For at holde et legeme med massen 𝑚 fast i en jævn cirkelbevægelse, kræves en kraft 𝐹<sub>𝑐</sub>
+        rettet mod centrum af størrelsen:
+        </p>
+        <img src="pic5.png">
+        <p>
+        hvor 𝑟 er cirkelbanens radius, og 𝑇 er
+        omløbstiden. Kraften 𝐹<sub>𝑐</sub> kaldes
+        centripetalkraften. Øvelsens formål er at eftervise denne formel.
+        Der bruges et apparat som på billedet. Motorens omløbshastighed kan reguleres vha. en strømforsyning, vognens masse kan varieres ved at lægge lodder på, og cirklens radius kan varieres ved at hæve eller sænke kraftmålerens ophængningskrog. Centripetalkraften aflæses på dynamometret. Radius måles nemmest efter at motoren er standset, ved at trække vognen ud, til kraftmåleren viser det samme som under rotationen. Omløbstiden måles vha. en fotocelle.
+        </p>
+        <br>
+        <p>
+        Lav tre måleserier med det formål at teste de tre proportionaliteter:
+        </p>
+        <img src="pic6.png">
+        <p>
+        Plot måleserierne i hver sit koordinatsystem og udfør passende regression. Undersøg om
+        proportionalitetskonstanterne stemmer med teorien. (For sammenhængen 𝐹<sub>𝑐</sub> ∝ 𝑇<sup> −2</sup> kan det være en
+        fordel at lave et lineariseret plot.)
+        </p>
+        </div>
     </body>
 </html>
