@@ -12,20 +12,20 @@
 
 function reset(){
 	
-	document.getElementById("temp").setAttribute("value","");
-	document.getElementById("vol").setAttribute("value","");
-	document.getElementById("sto").setAttribute("value","");
-	document.getElementById("try").setAttribute("value","");
+	document.getElementById("temp").setAttribute("value",null);
+	document.getElementById("vol").setAttribute("value",null);
+	document.getElementById("sto").setAttribute("value",null);
+	document.getElementById("try").setAttribute("value",null);
 	
-	document.getElementById("vol").value = 0;
-	document.getElementById("sto").value = 0;
-	document.getElementById("try").value = 0;
-	document.getElementById("temp").value = 0;
+	document.getElementById("vol").value = null;
+	document.getElementById("sto").value = null;
+	document.getElementById("try").value = null;
+	document.getElementById("temp").value = null;
 	
-	var vol = "";
-	var stof = "";
-	var tryk = "";
-	var temp = "";
+	var vol = null;
+	var stof = null;
+	var tryk = null;
+	var temp = null;
 	
 	
 }
@@ -52,12 +52,12 @@ function Gaslov(){
 	document.getElementById("try").setAttribute("value",trykin);
 	}
 	
-	if (document.getElementById("sto").value == 0){
+	if (document.getElementById("sto").value == ''){
 		var stofin = parseFloat((tryk*vol)/(konstant*temp))
 		document.getElementById("sto").setAttribute("value",stofin);
 		}
 	
-	if (document.getElementById("temp").value == 0){
+	if (document.getElementById("temp").value == ){
 		var tempin = parseFloat((tryk*vol)/(konstant*stof))
 		document.getElementById("temp").setAttribute("value",tempin);
 		}
