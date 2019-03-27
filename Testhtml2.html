@@ -21,28 +21,32 @@ function Gaslov(){
 	var stof = document.getElementById("sto").value;
 	var tryk = document.getElementById("try").value;
 	var temp = document.getElementById("temp").value;
-	var konstant = parseFloat(0.0831)
+	var konstant = parseFloat(0.0831);
 	
 	
 	
 	if (document.getElementById("vol").value == ""){
-	var volin = parseFloat((konstant*stof*temp)/tryk)
-	document.getElementById("vol").setAttribute("value",volin);
+	var volin = parseFloat((konstant*stof*temp)/tryk);
+	var volprint = volin.toFixed(5);
+	document.getElementById("vol").setAttribute("value",volprint);
 	}
 	
 	if (document.getElementById("try").value == ""){
-	var trykin = parseFloat(konstant/vol)
-	document.getElementById("try").setAttribute("value",trykin);
+	var trykin = parseFloat(konstant/vol);
+	var trykprint = trykin.toFixed(5);
+	document.getElementById("try").setAttribute("value",trykprint);
 	}
 	
 	if (document.getElementById("sto").value == ""){
 		var stofin = parseFloat((tryk*vol)/(konstant*temp))
-		document.getElementById("sto").setAttribute("value",stofin);
+		var stofprint = stofin.toFixed(5);
+		document.getElementById("sto").setAttribute("value",stofprint);
 		}
 	
 	if (document.getElementById("temp").value == "" ){
 		var tempin = parseFloat((tryk*vol)/(konstant*stof))
-		document.getElementById("temp").setAttribute("value",tempin);
+		var tempprint = tempin.toFixed(5);
+		document.getElementById("temp").setAttribute("value",tempprint);
 		}
 	}
 </script>
@@ -62,7 +66,7 @@ function Gaslov(){
 	<div class=center>
 		<div class=centerchild>
    		<p>Volume<br>
-        <input type="number" maxlength="5" name="volume" id="vol"; > Liter
+        <input type="number" maxlength="5" name="volume" id="vol"" > Liter
         </p>
          
          <p>Stofmængde<br>
