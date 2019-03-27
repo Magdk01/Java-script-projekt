@@ -17,10 +17,10 @@ function reset(){
 	document.getElementById("sto").setAttribute("value","");
 	document.getElementById("try").setAttribute("value","");
 	
-	document.getElementById("vol").value = "";
-	document.getElementById("sto").value = "";
-	document.getElementById("try").value = "";
-	document.getElementById("temp").value = "";
+	document.getElementById("vol").value = 0;
+	document.getElementById("sto").value = 0;
+	document.getElementById("try").value = 0;
+	document.getElementById("temp").value = 0;
 	
 	var vol = "";
 	var stof = "";
@@ -37,24 +37,28 @@ function Gaslov(){
 	var temp = document.getElementById("temp").value;
 	var konstant = parseFloat(0.0831)
 	
-	var volin = parseFloat((konstant*stof*temp)/tryk)
-	var stofin = parseFloat((tryk*vol)/(konstant*temp))
-	var trykin = parseFloat(konstant/vol)
-	var tempin = parseFloat((tryk*vol)/(konstant*stof))
+	var volin = 0
+	var stofin = 0
+	var trykin = 0
+	var tempin = 0
 	
-	if (document.getElementById("vol").value == ""){
+	if (document.getElementById("vol").value == 0){
+	var volin = parseFloat((konstant*stof*temp)/tryk)
 	document.getElementById("vol").setAttribute("value",volin);
 	}
 	
-	if (document.getElementById("try").value == ""){
+	if (document.getElementById("try").value == 0){
+	var trykin = parseFloat(konstant/vol)
 	document.getElementById("try").setAttribute("value",trykin);
 	}
 	
-	if (document.getElementById("sto").value == ""){
+	if (document.getElementById("sto").value == 0){
+		var stofin = parseFloat((tryk*vol)/(konstant*temp))
 		document.getElementById("sto").setAttribute("value",stofin);
 		}
 	
-	if (document.getElementById("temp").value == ""){
+	if (document.getElementById("temp").value == 0){
+		var tempin = parseFloat((tryk*vol)/(konstant*stof))
 		document.getElementById("temp").setAttribute("value",tempin);
 		}
 	}
