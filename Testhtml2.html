@@ -12,21 +12,7 @@
 
 function reset(){
 	
-	document.getElementById("temp").setAttribute("value",null);
-	document.getElementById("vol").setAttribute("value",null);
-	document.getElementById("sto").setAttribute("value",null);
-	document.getElementById("try").setAttribute("value",null);
-	
-	document.getElementById("vol").value = null;
-	document.getElementById("sto").value = null;
-	document.getElementById("try").value = null;
-	document.getElementById("temp").value = null;
-	
-	var vol = null;
-	var stof = null;
-	var tryk = null;
-	var temp = null;
-	
+	location.reload();
 	
 }
 
@@ -37,27 +23,24 @@ function Gaslov(){
 	var temp = document.getElementById("temp").value;
 	var konstant = parseFloat(0.0831)
 	
-	var volin = 0
-	var stofin = 0
-	var trykin = 0
-	var tempin = 0
 	
-	if (document.getElementById("vol").value == 0){
+	
+	if (document.getElementById("vol").value == ""){
 	var volin = parseFloat((konstant*stof*temp)/tryk)
 	document.getElementById("vol").setAttribute("value",volin);
 	}
 	
-	if (document.getElementById("try").value == 0){
+	if (document.getElementById("try").value == ""){
 	var trykin = parseFloat(konstant/vol)
 	document.getElementById("try").setAttribute("value",trykin);
 	}
 	
-	if (document.getElementById("sto").value == ''){
+	if (document.getElementById("sto").value == ""){
 		var stofin = parseFloat((tryk*vol)/(konstant*temp))
 		document.getElementById("sto").setAttribute("value",stofin);
 		}
 	
-	if (document.getElementById("temp").value == ){
+	if (document.getElementById("temp").value == "" ){
 		var tempin = parseFloat((tryk*vol)/(konstant*stof))
 		document.getElementById("temp").setAttribute("value",tempin);
 		}
@@ -75,26 +58,27 @@ function Gaslov(){
 	</div>
 </div>
 <h1 style= text-align:center;>Calculator</h1>
-<div class="main" style= text-align:center;>
+<div class="main">
+	<div class=center>
+		<div class=centerchild>
    		<p>Volume<br>
-        <input type="number" maxlength="5" name="volume" id="vol">
+        <input type="number" maxlength="5" name="volume" id="vol"; > Liter
         </p>
          
          <p>Stofmængde<br>
-         <input type="number" maxlength="5" name="stof" id="sto">
+         <input type="number" maxlength="5" name="stof" id="sto"> Mol
          </p>
-             
          <p>Temperatur<br>
-         <input type="number" maxlength="5" name="temperatur" id="temp">
+         <input type="number" maxlength="5" name="temperatur" id="temp"> Kelvin
          </p>
-             
          <p>Tryk<br>
-         <input type="number" maxlength="5" name="tryk" id="try">
+         <input type="number" maxlength="5" name="tryk" id="try"> Bar
          </p>
-           
+
          <input type="button" value="reng" onclick= "Gaslov()">
          <input type="button" value="reset" onclick= "reset()">
-
+         </div>
+	</div>
 </div>
 
 </body>
