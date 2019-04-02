@@ -3,7 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel = "stylesheet"  href="Index.css" >
-<title>Insert title here</title>
+<title>Calculator</title>
 </head>
 <script>
 
@@ -49,6 +49,18 @@ function Gaslov(){
 		document.getElementById("temp").setAttribute("value",tempprint);
 		}
 	}
+	
+function cirkel(){
+	var mass = document.getElementById("masse").value;
+	var rad = document.getElementById("radius").value;
+	var omlob = document.getElementById("omlob").value;
+	
+	var force = parseFloat(4*3.14^2*mass*rad)/(omlob^2);
+	
+	return force;
+	
+	
+}
 </script>
 <body bgcolor="" background="">
 
@@ -83,6 +95,29 @@ function Gaslov(){
          <input type="button" value="reset" onclick= "reset()">
          </div>
 	</div>
+	
+	
+	
+	<div class=center>
+		<div class=centerchild>
+   		<p>Masse<br>
+        <input type="number" maxlength="5" name="volume" id="masse" > gram
+        </p>
+         
+         <p>Radius<br>
+         <input type="number" maxlength="5" name="stof" id="radius"> centimenter
+         </p>
+         <p>Omløbstid<br>
+         <input type="number" maxlength="5" name="temperatur" id="omlob"> millisekunder
+         </p>
+         
+
+         <input type="button" value="regn" onclick= "document.getElementById('omres').innerHTML=cirkel()">
+         <input type="button" value="reset" onclick= "reset()">
+         </div>
+         <p id="omres">yeet</p>
+	</div>
+	
 </div>
 
 </body>
